@@ -47,7 +47,7 @@ function renderPatty() {
 
 function renderCheese() {
   //Trial 1 - Change the visibility of cheese based on state by manipulating the DOM
-    let cheese = document.querySelector("#cheese");
+  let cheese = document.querySelector("#cheese");
   if (state.Cheese) {
     cheese.style.display = "inherit";
   } else {
@@ -57,16 +57,35 @@ function renderCheese() {
 
 function renderTomatoes() {
   //Trial 1 - Change the visibility of Tomatoes based on state by manipulating the DOM
+  let tomato = document.querySelector("#tomato");
+  if (state.Tomatoes) {
+    tomato.style.display = "inherit";
+  } else {
+    tomato.style.display = "none";
+  }
 }
 
 function renderOnions() {
   //Trial 1 - Change the visibility of Onions based on state by manipulating the DOM
+  let onion = document.querySelector("#onion");
+  if (state.Onions) {
+    onion.style.display = "inherit";
+  } else {
+    onion.style.display = "none";
+  }
 }
 
 function renderLettuce() {
   //Trial 1 - Change the visibility of Lettuce based on state by manipulating the DOM
+  let lettuce = document.querySelector("#lettuce");
+  if (state.Lettuce) {
+    lettuce.style.display = "inherit";
+  } else {
+    lettuce.style.display = "none";
+  }
 }
 
+//Challenge 1 - Add/Remove the class active to the buttons based on state
 document.querySelector(".btn-patty").onclick = function () {
   state.Patty = !state.Patty;
   renderAll();
@@ -114,7 +133,6 @@ function renderButtons() {
   onionsButton.classList.toggle("active", state.Onions);
   lettuceButton.classList.toggle("active", state.Lettuce);
 }
-
 
 
 
@@ -175,7 +193,6 @@ function renderIngredientsBoard() {
     xlettuce.innerHTML=""
   }
 }
-
 
 //Judgement 1
 //In the p element having price-details as the class, display the calculated
