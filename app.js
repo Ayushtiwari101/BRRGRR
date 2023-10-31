@@ -138,65 +138,62 @@ function renderButtons() {
 
 //Challenge 2 - Render only the items selected in the ingredients board based on the state
 function renderIngredientsBoard() {
-  const xpatty = document.querySelector(".xpatty")
+  const removepatty = document.querySelector(".removepatty")
   
   if(state.Patty)
   {
-    xpatty.innerHTML="Patty"
+    removepatty.innerHTML="Patty"
   }
   else
   {
-    xpatty.innerHTML=""
+    removepatty.innerHTML=""
   }
 
-  const xcheese = document.querySelector(".xcheese")
+  const removecheese = document.querySelector(".removecheese")
   
   if(state.Cheese)
   {
-    xcheese.innerHTML="Cheese"
+    removecheese.innerHTML="Cheese"
   }
   else
   {
-    xcheese.innerHTML=""
+    removecheese.innerHTML=""
   }
 
-  const xtomatoes = document.querySelector(".xtomatoes")
+  const removetomatoes = document.querySelector(".removetomatoes")
   
   if(state.Tomatoes)
   {
-    xtomatoes.innerHTML="Tomatoes"
+    removetomatoes.innerHTML="Tomatoes"
   }
   else
   {
-    xtomatoes.innerHTML=""
+    removetomatoes.innerHTML=""
   }
 
-  const xonions = document.querySelector(".xonions")
+  const removeonions = document.querySelector(".removeonions")
   
   if(state.Onions)
   {
-    xonions.innerHTML="Onions"
+    removeonions.innerHTML="Onions"
   }
   else
   {
-    xonions.innerHTML=""
+    removeonions.innerHTML=""
   }
 
-  const xlettuce = document.querySelector(".xlettuce")
+  const removelettuce = document.querySelector(".removelettuce")
   
   if(state.Lettuce)
   {
-    xlettuce.innerHTML="Lettuce"
+    removelettuce.innerHTML="Lettuce"
   }
   else
   {
-    xlettuce.innerHTML=""
+    removelettuce.innerHTML=""
   }
 }
 
-//Judgement 1
-//In the p element having price-details as the class, display the calculated
-//price based on ingredients
 function renderPrice() {
   var totalPrice = wholeWheatBun;
 
